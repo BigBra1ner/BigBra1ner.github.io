@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade - Помощник менеджера</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Upgrade</div>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="objections.html">Возражения</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="welcome-section">
+            <h1>Добро пожаловать, Менеджер!</h1>
+            <p>Этот сайт — ваш личный помощник в диалоге с клиентом. Здесь вы найдете всю необходимую информацию о нашем бизнес-клубе и сможете быстро найти ответы на возражения клиентов.</p>
+        </section>
+
+        <section class="about-club">
+            <h2>О бизнес-клубе "Upgrade"</h2>
+            <p><strong>"Upgrade"</strong> — это закрытое сообщество для предпринимателей и топ-менеджеров, нацеленных на рост и развитие. Мы создаем среду, в которой вы можете обмениваться опытом, находить новых партнеров и получать поддержку от единомышленников.</p>
+            
+            <div class="collapsible">
+                <h3 class="collapsible-title">Наши участники</h3>
+                <div class="collapsible-content">
+                    <div class="participants-grid">
+                        <div class="participant-card">
+                            <img src="C:\Users\fundu\Downloads\photo_4201820545411557418_c.jpg" alt="Фото участника">
+                            <p><strong>Иван Петров</strong><br>Основатель "Техно-Старт"</p>
+                        </div>
+                        <div class="participant-card">
+                            <img src="C:\Users\fundu\Downloads\photo_4201820545411557418_c.jpg" alt="Фото участника">
+                            <p><strong>Мария Сидорова</strong><br>CEO "Креатив-Агентство"</p>
+                        </div>
+                        <div class="participant-card">
+                            <img src="C:\Users\fundu\Downloads\photo_4201820545411557418_c.jpg" alt="Фото участника">
+                            <p><strong>Алексей Иванов</strong><br>Инвестор, "Фин-Групп"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Что вы получаете в клубе:</h3>
+            <p>Доступ к закрытым мероприятиям, мастер-классам от ведущих экспертов, возможность для нетворкинга и многое другое.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Upgrade Business Club. Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible-title').forEach(item => {
+            item.addEventListener('click', event => {
+                const content = item.nextElementSibling;
+                // Переключаем видимость блока
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 3px solid #E50914; /* Красный акцент */
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #E50914; /* Красный при наведении и для активной ссылки */
+}
+
+main section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #000;
+    border-bottom: 2px solid #E50914;
+    padding-bottom: 10px;
+}
+
+/* Стили для страницы возражений */
+.objection {
+    margin-bottom: 15px;
+}
+
+.objection-title {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.objection-title:hover {
+    background-color: #333;
+}
+
+.objection-answer {
+    display: none; /* Ответы по умолчанию скрыты */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #f9f9f9;
+}
+
+/* --- НОВЫЕ СТИЛИ ДЛЯ ВЫПАДАЮЩЕГО СПИСКА УЧАСТНИКОВ --- */
+
+.collapsible {
+    margin: 20px 0;
+}
+
+.collapsible-title {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.collapsible-title:hover {
+    background-color: #333;
+}
+
+.collapsible-content {
+    display: none; /* Скрываем блок по умолчанию */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #f9f9f9;
+}
+
+.participants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.participant-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Делаем картинки круглыми */
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.participant-card p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* --- КОНЕЦ НОВЫХ СТИЛЕЙ --- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}

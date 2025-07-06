@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка возражений - Upgrade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Upgrade</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="objections.html" class="active">Возражения</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="objections-section">
+            <h1>Обработка возражений</h1>
+            <p>Нажмите на возражение, чтобы увидеть вариант ответа.</p>
+
+            <div class="objection">
+                <h3 class="objection-title">Это слишком дорого.</h3>
+                <div class="objection-answer">
+                    <p>"Я понимаю, что цена — важный фактор. Давайте посмотрим на это с другой стороны: сколько вы теряете прямо сейчас из-за отсутствия новых контактов и поддержки, которые дает наш клуб? Участие в 'Upgrade' — это инвестиция в ваш рост, которая окупается уже в первые месяцы за счет новых партнерств и идей. К тому же, у нас есть разные форматы участия, и мы можем подобрать оптимальный для вашего бюджета."</p>
+                </div>
+            </div>
+
+            <div class="objection">
+                <h3 class="objection-title">У меня нет времени.</h3>
+                <div class="objection-answer">
+                    <p>"Именно потому, что у вас мало времени, 'Upgrade' будет вам полезен. Мы экономим ваше время, собирая в одном месте самых полезных людей и актуальные знания. Всего одно мероприятие в месяц может дать вам больше, чем недели самостоятельных поисков. Вы инвестируете несколько часов, а получаете контакты и решения, которые экономят дни и недели."</p>
+                </div>
+            </div>
+            
+            <div class="objection">
+                <h3 class="objection-title">Я подумаю.</h3>
+                <div class="objection-answer">
+                    <p>"Конечно, решение важное. Могу я уточнить, что именно вызывает у вас сомнения? Возможно, я смогу предоставить больше информации о конкретном аспекте, который вас интересует — будь то состав участников, программа мероприятий или финансовые условия. Так вам будет проще принять взвешенное решение."</p>
+                </div>
+            </div>
+            
+            <div class="objection">
+                <h3 class="objection-title">Мы уже работаем с другими / состоим в другом клубе.</h3>
+                <div class="objection-answer">
+                    <p>"Это отлично, значит, вы понимаете ценность таких сообществ. Мы не предлагаем вам замену, мы предлагаем расширение ваших возможностей. В 'Upgrade' уникальный состав участников и фокус на практическом применении знаний. Многие наши резиденты состоят и в других клубах, но приходят к нам за нашей особой атмосферой и качеством нетворкинга. Предлагаю вам посетить одну нашу встречу в качестве гостя, чтобы вы сами смогли оценить разницу."</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Upgrade Business Club. Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.objection-title').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            })
+        });
+    </script>
+</body>
+</html>
